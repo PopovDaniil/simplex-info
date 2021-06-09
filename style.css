@@ -1,0 +1,58 @@
+body{
+    max-width: 808px;
+    margin: auto;
+    font-family: "Open Sans Regular";
+    background: #E5E5E5;
+}
+html{
+    font-size: 14px;
+}
+.conteiner__logo{
+    width: 100%;
+}
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("fonts/OpenSans-Regular.ttf") /* format("truetype") */;
+
+   }
+@font-face {
+    font-family: "Open Sans SemiBold";
+    src: url("fonts/OpenSans-SemiBold.ttf") /* format("truetype") */;
+   }
+.conteiner{
+    display: flex;
+    justify-content: center;
+}
+.conteiner-menu{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1px;
+    margin-top: 6px;
+}
+.conteiner-menu-box{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #0083CD;
+    word-wrap: break-word;
+    height: 52px;
+    text-align: center;
+}
+.conteiner-menu-box#foto{
+    flex-grow: 1.2;
+}
+.conteiner-menu-box__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    color: #E5E5E5;
+    font-weight: bold;
+    line-height: 19px;
+}
+.conteiner-menu-box:hover{
+    background-color:#3396cf;
+}
+
+
