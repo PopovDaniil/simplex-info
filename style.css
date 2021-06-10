@@ -2,7 +2,7 @@ body{
     max-width: 808px;
     margin: auto;
     font-family: "Open Sans Regular";
-    background: #E5E5E5;
+    background: #f6f6f6;
 }
 a{
     text-decoration: none;
@@ -118,7 +118,57 @@ html{
     cursor: pointer;
 }
 
- 
+.box.center {
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #CD0022;
+}
+.col {
+    flex-direction: column;
+}
+.col.center {
+    align-items: center;
+}
+.gap-50 {
+    gap: 50px;
+}
+
+.services {
+    width: 225px;
+}
+.services div {
+    padding: 5px;
+    height: 41px;
+}
+.services header {
+    height: 41px;
+    background-color: #CD0022;
+    color: white;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.services main {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.services main div:nth-child(odd) {
+    background-color: #c4c4c4;
+}
+.services main div:nth-child(even) {
+    background-color: #e5e5e5;
+}
+
+.vert-center-child * {
+    display: flex;
+    align-items: center;
+}
 
 
 
