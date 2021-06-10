@@ -117,6 +117,42 @@ html{
     color: white;
     cursor: pointer;
 }
+.box-warning{
+    border: 2px solid #CD0022;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 1rem;
+}
+.box-warning__text{
+    margin: 0.6rem;
+}
+.box-warning__img{
+    margin: 0.5em;
+}
+.box-time{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: flex-start;
+    border: 2px solid #CD0022;
+}
+.box-time p{
+    margin: 0;
+}
+.box-time-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box-time__img{
+    width: 32px;
+    margin: 0.25em;
+}
+.box-time__text{
+    padding-right: 2em;
+}
+
 
 .box.center {
     justify-content: center;
