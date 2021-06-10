@@ -154,7 +154,77 @@ html{
 }
 
 
- 
+.box.center {
+    justify-content: center;
+}
 
+h1 {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #CD0022;
+}
+.col {
+    flex-direction: column;
+}
+.col.center {
+    align-items: center;
+}
+.gap-50 {
+    gap: 50px;
+}
 
+.services {
+    width: 225px;
+}
 
+.services header {
+    height: 41px;
+    background-color: #CD0022;
+    color: white;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.services-list {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.services-list div {
+    padding: 5px;
+    height: 32px;
+}
+
+.services-list div:nth-child(odd) {
+    background-color: #c4c4c4;
+}
+.services-list div:nth-child(even) {
+    background-color: #e5e5e5;
+}
+
+.vert-center-child * {
+    display: flex;
+    align-items: center;
+}
+.wraper__link{
+    border-bottom: 2px solid #CD0022;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #CD0022;
+}
+
+main > article {
+    margin: 50px 0;
+}
+
+body footer {
+    margin-top: 80px;
+    padding: 15px 50px;
+    text-align: center;
+    background-color: #a8a8a8;
+    color: #e5e5e5;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.12em;
+}
