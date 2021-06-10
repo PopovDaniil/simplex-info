@@ -176,10 +176,7 @@ h1 {
 .services {
     width: 225px;
 }
-.services div {
-    padding: 5px;
-    height: 41px;
-}
+
 .services header {
     height: 41px;
     background-color: #CD0022;
@@ -189,15 +186,20 @@ h1 {
     text-align: center;
 }
 
-.services main {
+.services-list {
     font-size: 12px;
     letter-spacing: 0.04em;
 }
 
-.services main div:nth-child(odd) {
+.services-list div {
+    padding: 5px;
+    height: 41px;
+}
+
+.services-list div:nth-child(odd) {
     background-color: #c4c4c4;
 }
-.services main div:nth-child(even) {
+.services-list div:nth-child(even) {
     background-color: #e5e5e5;
 }
 
