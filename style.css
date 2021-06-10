@@ -4,6 +4,11 @@ body{
     font-family: "Open Sans Regular";
     background: #E5E5E5;
 }
+a{
+    text-decoration: none;
+    color: #313131;
+    margin: 0;
+}
 html{
     font-size: 14px;
 }
@@ -54,5 +59,66 @@ html{
 .conteiner-menu-box:hover{
     background-color:#3396cf;
 }
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+.box-phone,.box-email,.box-info,.box-whatsapp{
+    display: flex;
+    align-items: center;
+}
+.box-phone,.box-email{
+    color: #CD0022;
+}
+.box-phone__text{
+    font-weight: 700;
+}
+.box-phone__btn{
+    height: 31px;
+    border: 2px solid #CD0022;
+    border-radius: 10px;
+    letter-spacing: 0.08rem;
+    color: #CD0022;
+}
+.box-phone__btn:hover{
+    background-color: #CD0022;
+    color: white;
+    cursor: pointer;
+}
+.box-phone *, .box-email *, .box-info *, .box-whatsapp *{
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+.box-info__img, .box-whatsapp__img{
+    margin-right: 0;
+}
+.box-info__text, .box-whatsapp__btn{
+    margin-left: 0;
+}
+.box-info a,.box-whatsapp__btn{
+    margin: 0;
+    text-align: left;
+}
+.space{
+    margin-right: 1.5em;
+    margin-left: 0.5em;
+}
+.box-whatsapp__btn{
+    color: #00CD52;
+    letter-spacing: 0.08rem;
+    border-radius: 10px;
+    height: 31px;
+    border: 2px solid #00CD14;
+}
+.box-whatsapp__btn:hover{
+    background-color:#00CD52 ;
+    color: white;
+    cursor: pointer;
+}
+
+ 
+
 
 
