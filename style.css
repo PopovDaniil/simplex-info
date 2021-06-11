@@ -207,18 +207,11 @@ h1 {
     display: flex;
     align-items: center;
 }
-.wraper__link{
-    border-bottom: 2px solid #CD0022;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #CD0022;
-}
-
 main > article {
     margin: 50px 0;
 }
 
-body footer {
+body > footer {
     margin-top: 80px;
     padding: 15px 50px;
     text-align: center;
@@ -228,3 +221,38 @@ body footer {
     line-height: 19px;
     letter-spacing: 0.12em;
 }
+.wraper{
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+.wraper__link{
+    border-bottom: 2px solid #CD0022;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #CD0022;
+}
+.picture{
+    width: 70%;
+}
+.headText{
+    font-size: 1.5rem;
+    color: #CD0022;
+}
+.headContent__text{
+    font-size: 1.3rem;
+    color: #000000;
+    letter-spacing: 0.15em;
+}
+.mainContent__text{
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    text-align: justify;
+}
+.footerContent__headText{
+    font-size: 1.2rem;
+}
+.footerContent__footText, .footerContent__headText, .headContent__text, .headText{
+    text-align: center;
+}
+
