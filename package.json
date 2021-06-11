@@ -1,0 +1,22 @@
+{
+  "name": "simplex-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PopovDaniil/simplex-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PopovDaniil/simplex-static/issues"
+  },
+  "homepage": "https://github.com/PopovDaniil/simplex-static#readme",
+  "dependencies": {
+    "mongodb": "^3.6.9"
+  }
+}
