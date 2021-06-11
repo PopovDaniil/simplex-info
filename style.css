@@ -193,7 +193,7 @@ h1 {
 
 .services-list div {
     padding: 5px;
-    height: 41px;
+    height: 32px;
 }
 
 .services-list div:nth-child(odd) {
@@ -212,4 +212,19 @@ h1 {
     font-weight: bold;
     font-size: 1.2rem;
     color: #CD0022;
+}
+
+main > article {
+    margin: 50px 0;
+}
+
+body footer {
+    margin-top: 80px;
+    padding: 15px 50px;
+    text-align: center;
+    background-color: #a8a8a8;
+    color: #e5e5e5;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.12em;
 }
