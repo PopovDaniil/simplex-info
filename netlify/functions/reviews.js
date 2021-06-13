@@ -10,32 +10,40 @@ exports.handler = async function (event, context) {
     const reviews = db.collection('reviews')
 
     try {
-    switch (event.httpMethod) {
-        case 'GET':
-            const allReviews = await reviews.find().toArray();
-            return {
-                statusCode: 200,
-                body: JSON.stringify(allReviews)
-            }
-        case 'POST':
-            const { name, email, text } = JSON.parse(event.body)
-            console.log(name, email, text);
-            if (!(name && email && text))
+        switch (event.httpMethod) {
+            case 'GET':
+                const allReviews = await reviews.find().toArray();
                 return {
-                    statusCode: 500,
-                    body: 'Body must contain fields: name, email, text'
+                    statusCode: 200,
+                    body: JSON.stringify(allReviews)
                 }
-            const review = { name, email, text }
-            const status = await reviews.insertOne(review)
-            return {
-                statusCode: 200,
-                body: JSON.stringify(status.insertedId)
-            }
-        default:
-            return {
-                statusCode: 501,
-                body: "Unknown method"
-            }
+            case 'POST':
+                const body = Object.fromEntries(
+                    decodeURIComponent(event.body)
+                        .split('&').map(
+                            el => el.split('=')
+                        )
+                )
+                console.log(body);
+                const { name, email, text } = body
+                if (!(name && email && text))
+                    return {
+                        statusCode: 500,
+                        body: 'Body must contain fields: name, email, text'
+                    }
+                const review = { name, email, text }
+                await reviews.insertOne(review)
+                return {
+                    statusCode: 301,
+                    headers: {
+                        'Location': '/reviews.html'
+                    }
+                }
+            default:
+                return {
+                    statusCode: 501,
+                    body: "Unknown method"
+                }
         }
     } finally {
         client.close()

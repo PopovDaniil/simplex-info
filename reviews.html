@@ -129,10 +129,10 @@
 
         <article class="box center col">
                         
-            <form action="" method="POST">
-                <input type="text" class="name" placeholder="Ваше имя">
-                <input type="email" class="email" placeholder="Ваш Email">
-                <br><textarea type="text" class="reviews" placeholder="Место для текста Вашего отзыва"></textarea><br>
+            <form action="/.netlify/functions/reviews" method="POST">
+                <input type="text" class="name" name="name" placeholder="Ваше имя">
+                <input type="email" class="email" name="email" placeholder="Ваш Email">
+                <br><textarea type="text" class="reviews" name="text" placeholder="Место для текста Вашего отзыва"></textarea><br>
                 <p class="robot"><input type="checkbox" value="Я не робот">Я не робот</p><br>
                 <button type="submit" class="butt_form"><b>Отправить отзыв</b></button>
             </form>

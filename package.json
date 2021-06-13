@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/PopovDaniil/simplex-static.git"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
