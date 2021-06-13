@@ -255,4 +255,62 @@ body > footer {
 .footerContent__footText, .footerContent__headText, .headContent__text, .headText{
     text-align: center;
 }
+form{
+    position: relative;
+    display: block;
+    border: 2px solid #CD0022;
+    padding: 20px;
+    background-color: pink;
+    font-size: 14px;
+}
+.name, .email{
+    width: 200px;
+    height: 26px;
+}
+.email{
+    position: absolute;
+    right: 20px;
+
+}
+.reviews{
+    width: 560px;
+    height: 100px;
+}
+input, textarea{
+    border-radius: 16px;
+    border: 1px solid #CD0022;
+    padding: 7px;
+    margin: 10px;
+}
+textarea{
+    resize: none;
+}
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 2px #CD0022;
+}
+.butt_form{
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    border: 1px solid #CD0022;
+    margin: 0 auto;
+    padding: 4px;
+    width: 200px;
+    height: 30px;
+    color: #CD0022;
+    text-align: center;
+}
+.robot{
+    width: 180px;
+    height: 56px;
+    border-radius: 16px;
+    border: 1px solid #CD0022;
+    margin: 10px;
+    padding: auto;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+}
+   
 
