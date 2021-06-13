@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PopovDaniil/simplex-static.git"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/PopovDaniil/simplex-static#readme",
   "dependencies": {
     "mongodb": "^3.6.9"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4"
   }
 }

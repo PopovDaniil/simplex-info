@@ -9,6 +9,7 @@ exports.handler = async function (event, context) {
     const db = client.db('simplex')
     const reviews = db.collection('reviews')
 
+    try {
     switch (event.httpMethod) {
         case 'GET':
             const allReviews = await reviews.find().toArray();
@@ -35,5 +36,8 @@ exports.handler = async function (event, context) {
                 statusCode: 501,
                 body: "Unknown method"
             }
+        }
+    } finally {
+        client.close()
     }
 }
