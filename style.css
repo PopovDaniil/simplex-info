@@ -64,6 +64,7 @@ html{
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 1.1rem;
+    gap: 10px;
 }
 .box-phone,.box-email,.box-info,.box-whatsapp{
     display: flex;
@@ -121,14 +122,13 @@ html{
     border: 2px solid #CD0022;
     display: flex;
     justify-content: end;
-    align-items: flex-end;
+    align-items: center;
     font-size: 1rem;
-}
-.box-warning__text{
-    margin: 0.6rem;
+    padding: 0px 10px;
 }
 .box-warning__img{
     margin: 0.5em;
+    align-self: flex-end;
 }
 .box-time{
     display: flex;
@@ -136,10 +136,9 @@ html{
     font-size: 1rem;
     align-items: flex-start;
     border: 2px solid #CD0022;
+    padding: 0px 10px;
 }
-.box-time p{
-    margin: 0;
-}
+
 .box-time-row{
     display: flex;
     flex-direction: row;
@@ -147,10 +146,7 @@ html{
 }
 .box-time__img{
     width: 32px;
-    margin: 0.25em;
-}
-.box-time__text{
-    padding-right: 2em;
+    margin: 0.5em;
 }
 
 
@@ -292,6 +288,7 @@ input:focus, textarea:focus{
 .butt_form{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 16px;
     border: 1px solid #CD0022;
     margin: 0 auto;
@@ -302,6 +299,9 @@ input:focus, textarea:focus{
     text-align: center;
 }
 .robot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 180px;
     height: 56px;
     border-radius: 16px;
