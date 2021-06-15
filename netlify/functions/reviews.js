@@ -15,7 +15,10 @@ exports.handler = async function (event, context) {
                 const allReviews = await reviews.find().toArray();
                 return {
                     statusCode: 200,
-                    body: JSON.stringify(allReviews)
+                    body: JSON.stringify(allReviews),
+                    headers: {
+                        'Content-type': 'application/json'
+                    }
                 }
             case 'POST':
                 const body = Object.fromEntries(
