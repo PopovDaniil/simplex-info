@@ -33,6 +33,9 @@
     main > article {
         margin: 10px;
     }
+    .box-warning{
+        margin: 10px;
+    }
 }
 
 @media (max-width: 480px){
