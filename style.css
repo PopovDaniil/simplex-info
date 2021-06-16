@@ -310,5 +310,30 @@ input:focus, textarea:focus{
     text-align: left;
     background-color: white;
 }
-   
+
+.reviews_table{
+    position: relative;
+    border: 2px solid #CD0022;
+    border-collapse: collapse;
+    width: 60vw;
+    max-width: 600px;
+}
+td{
+    padding: 6px;
+    border-bottom: 2px solid #CD0022;
+}
+.border{
+    border: 2px solid #CD0022;
+    border-collapse: collapse;
+}
+.name_rev, .mail_rew{
+    text-align: center;
+}
+.text_rev{
+    text-align: left;
+} 
+.data_time{
+    text-align: end;
+    margin-top: -40px;
+}
 

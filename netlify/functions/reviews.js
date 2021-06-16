@@ -23,18 +23,21 @@ exports.handler = async function (event, context) {
             case 'POST':
                 const body = Object.fromEntries(
                     decodeURIComponent(event.body)
+                        .replace(/\+/g, ' ')
                         .split('&').map(
                             el => el.split('=')
                         )
                 )
+                console.log(event.body);
                 console.log(body);
                 const { name, email, text } = body
+                const time = new Date().toLocaleString("ru-RU")
                 if (!(name && email && text))
                     return {
                         statusCode: 500,
                         body: 'Body must contain fields: name, email, text'
                     }
-                const review = { name, email, text }
+                const review = { name, email, text, time }
                 await reviews.insertOne(review)
                 return {
                     statusCode: 301,
