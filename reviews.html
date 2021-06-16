@@ -138,22 +138,20 @@
 
             <section class="box center col">
                 <p class="headText">Ваши отзывы</p>
-                <table class="reviews_table">
+                <div class="box col reviews-list">
                     <template id="review">
-                        <tr>
-                            <td class="border">
-                                <p class="name_rev" id="name">Владимир</p>
-                                <p class="mail_rew" id="email">vladimir@mail.ru</p>
-                            </td>
-                            <td>
+                        <div class="box col border pad-10">
+                            <div>
+                                <span class="name_rev" id="name">Владимир</span>
+                                (<span class="mail_rew" id="email">vladimir@mail.ru</span>)
+                            </div>
+                            <div>
                                 <p class="text_rev" id="text">Счастья, здоровья и всего хорошего.</p>
-                            </td>
-                            <td>
-                                <p class="data_time" id="time">дата и время</p>
-                            </td>
-                        </tr>
+                                <p class="right gray" id="time">дата и время</p>
+                            </div>
+                        </div>
                     </template>
-                </table>
+                </div>
             </section>
         </article>
 
