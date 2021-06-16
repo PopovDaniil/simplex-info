@@ -23,13 +23,15 @@ exports.handler = async function (event, context) {
             case 'POST':
                 const body = Object.fromEntries(
                     decodeURIComponent(event.body)
+                        .replaceAll('+', ' ')
                         .split('&').map(
                             el => el.split('=')
                         )
                 )
+                console.log(event.body);
                 console.log(body);
                 const { name, email, text } = body
-                const time = new Date().toLocaleString()
+                const time = new Date().toLocaleString("ru-RU")
                 if (!(name && email && text))
                     return {
                         statusCode: 500,
