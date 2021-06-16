@@ -92,11 +92,8 @@ html{
     margin-left: 1em;
     margin-right: 0.5em;
 }
-.box-info__img, .box-whatsapp__img{
-    margin-right: 0;
-}
 .box-info__text, .box-whatsapp__btn{
-    margin-left: 0;
+    margin-left: 0px;
 }
 .box-info a,.box-whatsapp__btn{
     margin: 0;
@@ -104,7 +101,7 @@ html{
 }
 .space{
     margin-right: 1.5em;
-    margin-left: 0.5em;
+    margin-left: 0px;
 }
 .box-whatsapp__btn{
     color: #00CD52;
