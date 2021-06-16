@@ -136,9 +136,7 @@ html{
     align-items: flex-start;
     border: 2px solid #CD0022;
     padding: 0px 10px;
-    margin: 10px;
 }
-
 .box-time-row{
     display: flex;
     flex-direction: row;
