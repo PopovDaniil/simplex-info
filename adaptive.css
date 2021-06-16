@@ -56,7 +56,6 @@
         top: 0;
         left: 0;
         background-color: rgba(89, 19, 129, 0.95);
-        
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -64,7 +63,7 @@
       }
       
       .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px;
         text-decoration: none;
         font-size: 1.5rem;
         color: #818181;
