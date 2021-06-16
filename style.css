@@ -75,6 +75,7 @@ html{
 }
 .box-phone__text{
     font-weight: 700;
+    white-space: nowrap;
 }
 .box-phone__btn{
     height: 3em;
