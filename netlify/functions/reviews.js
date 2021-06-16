@@ -23,7 +23,7 @@ exports.handler = async function (event, context) {
             case 'POST':
                 const body = Object.fromEntries(
                     decodeURIComponent(event.body)
-                        .replaceAll('+', ' ')
+                        .replace(/\+/g, ' ')
                         .split('&').map(
                             el => el.split('=')
                         )
