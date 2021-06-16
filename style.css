@@ -16,6 +16,9 @@ html{
 .conteiner__logo{
     width: 100%;
 }
+.nextMenu,.sidenav{
+    display: none;
+}
 @font-face {
     font-family: "Open Sans Regular";
     src: url("fonts/OpenSans-Regular.ttf") /* format("truetype") */;

@@ -20,3 +20,11 @@ document.addEventListener(
         '/.netlify/functions/reviews', 'template#review'
     )
 )
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
