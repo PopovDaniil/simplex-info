@@ -130,25 +130,31 @@
             <form action="/.netlify/functions/reviews" method="POST">
                 <input type="text" class="name" name="name" placeholder="Ваше имя" required>
                 <input type="email" class="email" name="email" placeholder="Ваш Email" required>
-                <br><textarea type="text" class="reviews" name="text"
-                    placeholder="Место для текста Вашего отзыва" required></textarea><br>
+                <br><textarea type="text" class="reviews" name="text" placeholder="Место для текста Вашего отзыва"
+                    required></textarea><br>
                 <p class="robot"><input type="checkbox" value="Я не робот" required>Я не робот</p><br>
                 <button type="submit" class="butt_form"><b>Отправить отзыв</b></button>
             </form>
 
-            <template id="review">
-                <div>
-                    <div>
-                        Имя: <span id="name">name</span>
-                    </div>
-                    <div>
-                        E-mail: <span id="email">email</span>
-                    </div>
-                    <div>
-                        Текст:<br><span id="text">text</span>
-                    </div>
-                </div>
-            </template>
+            <section class="box center col">
+                <p class="headText">Ваши отзывы</p>
+                <table class="reviews_table">
+                    <template id="review">
+                        <tr>
+                            <td class="border">
+                                <p class="name_rev" id="name">Владимир</p>
+                                <p class="mail_rew" id="email">vladimir@mail.ru</p>
+                            </td>
+                            <td>
+                                <p class="text_rev" id="text">Счастья, здоровья и всего хорошего.</p>
+                            </td>
+                            <td>
+                                <p class="data_time" id="time">дата и время</p>
+                            </td>
+                        </tr>
+                    </template>
+                </table>
+            </section>
         </article>
 
 

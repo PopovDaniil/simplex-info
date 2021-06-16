@@ -29,12 +29,13 @@ exports.handler = async function (event, context) {
                 )
                 console.log(body);
                 const { name, email, text } = body
+                const time = new Date().toLocaleString()
                 if (!(name && email && text))
                     return {
                         statusCode: 500,
                         body: 'Body must contain fields: name, email, text'
                     }
-                const review = { name, email, text }
+                const review = { name, email, text, time }
                 await reviews.insertOne(review)
                 return {
                     statusCode: 301,
