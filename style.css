@@ -88,7 +88,7 @@ html{
     color: white;
     cursor: pointer;
 }
-.box-phone *, .box-email *, .box-info *, .box-whatsapp *{
+.box-phone > *, .box-email > *, .box-info > *, .box-whatsapp > *{
     margin-left: 1em;
     margin-right: 0.5em;
 }
