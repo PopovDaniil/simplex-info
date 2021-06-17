@@ -28,8 +28,6 @@ exports.handler = async function (event, context) {
                             el => el.split('=')
                         )
                 )
-                console.log(event.body);
-                console.log(body);
                 const { name, email, text } = body
                 const time = new Date().toLocaleString("ru-RU")
                 if (!(name && email && text))
