@@ -11,9 +11,13 @@ a{
 }
 html{
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 .conteiner__logo{
     width: 100%;
+}
+.nextMenu,.sidenav{
+    display: none;
 }
 @font-face {
     font-family: "Open Sans Regular";
