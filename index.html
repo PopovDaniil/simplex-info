@@ -7,47 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Центр медицинских осмотров "Симплекс"</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
     <header>
-
+        
         <div class="conteiner">
             <img class="conteiner__logo" src="img/logo.png" alt="">
+            <span class="nextMenu" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/">главная</a>
+            <a href="#">новости</a>
+            <a href="#">наши клиенты</a>
+            <a href="reviews.html">отзывы</a>
+            <a href="#">фотоальбом</a>
+            <a href="#">вакансии</a>
+            <a href="#">мы в краснодаре</a>
+            <a href="#">контакты</a>
         </div>
 
         <nav class="conteiner-menu">
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">главная</a>
-            </div>
+            <a class="conteiner-menu-box" href="/">
+                <div class="conteiner-menu-box__link">
+                    главная
+                </div>
+            </a>
 
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">новости</a>
-            </div>
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    новости
+                </div>
+            </a>
 
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">наши клиенты</a>
-            </div>
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    наши клиенты
+                </div>
+            </a>
 
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">отзывы</a>
-            </div>
+            <a class="conteiner-menu-box" href="reviews.html">
+                <div class="conteiner-menu-box__link">
+                    отзывы
+                </div>
+            </a>
 
-            <div id="foto" class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">фотоальбом</a>
-            </div>
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    фотоальбом
+                </div>
+            </a>
 
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">вакансии</a>
-            </div>
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    вакансии
+                </div>
+            </a>
 
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">мы в краснодаре</a>
-            </div>
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    мы в краснодаре
+                </div>
+            </a>
 
-            <div class="conteiner-menu-box">
-                <a class="conteiner-menu-box__link" href="#">контакты</a>
-            </div>
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    контакты
+                </div>
+            </a>
         </nav>
 
         <div class="box">
@@ -90,7 +121,7 @@
             <div class="box-time">
                 <div class="box-time-row">
                     <img class="box-time__img" src="img/Clock.svg" alt="">
-                    <p class="box-time__text">Режим работы:</p>
+                    <div class="box-time__text">Режим работы:</div>
                 </div>
                 <p class="box-time__text">Понедельник — Пятница с 08:00 до 18:00 <br>
                     Суббота с 09:00 до 13:00</p>
@@ -100,13 +131,13 @@
 
     <main>
         <div class="wraper">
-            <a class="wraper__link" href="#">посмотреть услуги</a>
+            <a class="wraper__link" href="#services">посмотреть услуги</a>
             <a><img src="img/CaretDown.svg" alt=""></a>
         </div>
 
         <article class="box center col">
             <p class="headText">
-                Коронавирус. ПЦР-тест. Антитела к коронавирусу. Срочная диагностика. 
+                Коронавирус. ПЦР-тест. Антитела к коронавирусу. Срочная диагностика.
                 Сертификат COVID-19 на английском языке с QR-кодом
             </p>
             <img class="picture" src="img/covid.png" alt="">
@@ -121,10 +152,16 @@
 
             <section class="mainContent">
                 <p class="mainContent__text">
-                    Коллектив Центра медицинских осмотров «Симплекс» считает, что получение необходимых медицинских документов должно быть просто, быстро и удобно.
-                    Мы предлагаем полный спектр медицинских осмотров: медицинские справки, личные медицинские книжки, предварительные и периодические медицинские осмотры, диспансеризацию государственных служащих, лабораторную и рентгенологическую диагностику
-                    В нашем медицинском центре созданы все условия (наличие всех необходимых врачей специалистов, цифровой рентгеновский кабинет, лаборатория) позволяющие в течение 30 минут пройти медицинский осмотр
-                    Мы осуществляем выезд на территорию предприятий ЮФО. Наши передвижные медицинские комплексы позволяют работать на территории предприятий, не имеющих собственных медицинских кабинетов.
+                    Коллектив Центра медицинских осмотров «Симплекс» считает, что получение необходимых медицинских
+                    документов должно быть просто, быстро и удобно.
+                    Мы предлагаем полный спектр медицинских осмотров: медицинские справки, личные медицинские книжки,
+                    предварительные и периодические медицинские осмотры, диспансеризацию государственных служащих,
+                    лабораторную и рентгенологическую диагностику
+                    В нашем медицинском центре созданы все условия (наличие всех необходимых врачей специалистов,
+                    цифровой рентгеновский кабинет, лаборатория) позволяющие в течение 30 минут пройти медицинский
+                    осмотр
+                    Мы осуществляем выезд на территорию предприятий ЮФО. Наши передвижные медицинские комплексы
+                    позволяют работать на территории предприятий, не имеющих собственных медицинских кабинетов.
                 </p>
             </section>
 
@@ -137,10 +174,10 @@
                 </p>
             </footer>
         </article>
-        
+
         <article class="box center col">
             <header>
-                <h1>Услуги</h1>
+                <h1 id="services">Услуги</h1>
             </header>
             <article class="box gap-50">
                 <section class="services col">

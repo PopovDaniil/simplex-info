@@ -1,0 +1,125 @@
+@media (max-width: 1170px){
+    form{
+        max-width: 100%;
+    }
+    input{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 760px){
+    form{
+        max-width: 80%;
+    }
+    .name, .email{
+        width: 180px;
+        height: 22px;
+    }
+    .reviews{
+        width: 460px;
+        height: 100px;
+    }
+    input{
+        font-size: 14px;
+    }
+    .conteiner-menu {
+        display: none;
+    }
+    .box, .wraper {
+        justify-content: center;
+        gap: 10px;
+    }
+    main > article {
+        margin: 10px;
+    }
+    .box-warning{
+        margin: 10px;
+    }
+    .conteiner__logo{
+        width: 90%;
+    }
+    .nextMenu{
+        display: block;
+        align-items: center;
+        margin: auto;
+        font-size: 3.5em;
+        cursor:pointer
+    }
+
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(89, 19, 129, 0.95);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+      }
+      
+      .sidenav a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media (max-width: 480px){
+    form{
+        max-width: 80%;
+        padding: 20px;
+    }
+    .name, .email{
+        width: 80px;
+        height: 10px;
+    }
+    .reviews{
+        width: 180px;
+        height: 140px;
+    }
+    input{
+        font-size: 12px;
+    }
+    .butt_form{
+        width: 100px;
+        height: 40px;
+    }
+    .robot{
+        font-size: 12px;
+        margin: 0 auto;      
+        width: 100px;
+        height: 50px;
+    }
+    body > footer {
+        padding: 20px;
+    }
+    .nextMenu{
+        font-size: 2em;
+    }
+
+}

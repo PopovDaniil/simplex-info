@@ -11,9 +11,13 @@ a{
 }
 html{
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 .conteiner__logo{
     width: 100%;
+}
+.nextMenu,.sidenav{
+    display: none;
 }
 @font-face {
     font-family: "Open Sans Regular";
@@ -64,6 +68,7 @@ html{
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 1.1rem;
+    gap: 10px;
 }
 .box-phone,.box-email,.box-info,.box-whatsapp{
     display: flex;
@@ -74,9 +79,10 @@ html{
 }
 .box-phone__text{
     font-weight: 700;
+    white-space: nowrap;
 }
 .box-phone__btn{
-    height: 31px;
+    height: 3em;
     border: 2px solid #CD0022;
     border-radius: 10px;
     letter-spacing: 0.08rem;
@@ -87,15 +93,12 @@ html{
     color: white;
     cursor: pointer;
 }
-.box-phone *, .box-email *, .box-info *, .box-whatsapp *{
+.box-phone > *, .box-email > *, .box-info > *, .box-whatsapp > *{
     margin-left: 1em;
     margin-right: 0.5em;
 }
-.box-info__img, .box-whatsapp__img{
-    margin-right: 0;
-}
 .box-info__text, .box-whatsapp__btn{
-    margin-left: 0;
+    margin-left: 0px;
 }
 .box-info a,.box-whatsapp__btn{
     margin: 0;
@@ -103,7 +106,7 @@ html{
 }
 .space{
     margin-right: 1.5em;
-    margin-left: 0.5em;
+    margin-left: 0px;
 }
 .box-whatsapp__btn{
     color: #00CD52;
@@ -121,14 +124,13 @@ html{
     border: 2px solid #CD0022;
     display: flex;
     justify-content: end;
-    align-items: flex-end;
+    align-items: center;
     font-size: 1rem;
-}
-.box-warning__text{
-    margin: 0.6rem;
+    padding: 0px 10px;
 }
 .box-warning__img{
     margin: 0.5em;
+    align-self: flex-end;
 }
 .box-time{
     display: flex;
@@ -136,10 +138,9 @@ html{
     font-size: 1rem;
     align-items: flex-start;
     border: 2px solid #CD0022;
+    padding: 0px 10px;
 }
-.box-time p{
-    margin: 0;
-}
+
 .box-time-row{
     display: flex;
     flex-direction: row;
@@ -147,10 +148,7 @@ html{
 }
 .box-time__img{
     width: 32px;
-    margin: 0.25em;
-}
-.box-time__text{
-    padding-right: 2em;
+    margin: 0.5em;
 }
 
 
@@ -255,4 +253,113 @@ body > footer {
 .footerContent__footText, .footerContent__headText, .headContent__text, .headText{
     text-align: center;
 }
+form{
+    position: relative;
+    display: block;
+    border: 2px solid #CD0022;
+    padding: 20px;
+    background-color: pink;
+    font-size: 14px;
+}
+.name, .email{
+    width: 200px;
+    height: 26px;
+}
+.email{
+    position: absolute;
+    right: 20px;
 
+}
+.reviews{
+    width: 560px;
+    height: 100px;
+}
+input, textarea{
+    border-radius: 16px;
+    border: 1px solid #CD0022;
+    padding: 7px;
+    margin: 10px;
+}
+textarea{
+    resize: none;
+}
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 2px #CD0022;
+}
+.butt_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #CD0022;
+    margin: 0 auto;
+    padding: 4px;
+    width: 200px;
+    height: 30px;
+    color: #CD0022;
+    text-align: center;
+}
+.robot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 56px;
+    border-radius: 16px;
+    border: 1px solid #CD0022;
+    margin: 10px;
+    padding: auto;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+}
+.border{
+    border: 2px solid #CD0022;
+    border-collapse: collapse;
+}
+.right {
+    text-align: right;
+}
+.pad-10 {
+    padding: 10px;
+}
+.gray {
+    color: gray;
+}
+.reviews-list {
+    width: 60vw;
+    max-width: 600px;
+}
+ .reviews_table{
+    /* position: relative;
+    border: 2px solid #CD0022;
+    border-collapse: collapse; */
+    display: flex;
+    width: 60vw;
+    max-width: 600px;
+}
+td{
+    padding: 6px;
+    border-bottom: 2px solid #CD0022;
+}
+
+.name_rev, .mail_rew{
+    text-align: center;
+}
+.text_rev{
+    text-align: left;
+} 
+.data_time{
+    text-align: end;
+    margin-top: -40px;
+} 
+.loader {
+    height: 100px;
+}
+.hide {
+    display: none;
+}
+.left {
+    float: left;
+}

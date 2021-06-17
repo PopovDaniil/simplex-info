@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр медицинских осмотров "Симплекс"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        
+        <div class="conteiner">
+            <img class="conteiner__logo" src="img/logo.png" alt="">
+            <span class="nextMenu" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/">главная</a>
+            <a href="#">новости</a>
+            <a href="#">наши клиенты</a>
+            <a href="reviews.html">отзывы</a>
+            <a href="#">фотоальбом</a>
+            <a href="#">вакансии</a>
+            <a href="#">мы в краснодаре</a>
+            <a href="#">контакты</a>
+        </div>
+
+        <nav class="conteiner-menu">
+            <a class="conteiner-menu-box" href="/">
+                <div class="conteiner-menu-box__link">
+                    главная
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    новости
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    наши клиенты
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="reviews.html">
+                <div class="conteiner-menu-box__link">
+                    отзывы
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    фотоальбом
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    вакансии
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    мы в краснодаре
+                </div>
+            </a>
+
+            <a class="conteiner-menu-box" href="#">
+                <div class="conteiner-menu-box__link">
+                    контакты
+                </div>
+            </a>
+        </nav>
+
+        <div class="box">
+
+            <div class="box-phone">
+                <img class="box-phone__img" src="img/phone.svg" alt="">
+                <p class="box-phone__text">+7 (863) 333-22-82</p>
+                <a href="#"><button class="box-phone__btn"> заказать звонок</button></a>
+            </div>
+
+            <div class="box-email">
+                <img class="box-email__img" src="img/At.svg" alt="">
+                <p class="box-email__text">E-mail: medosmotr-rostov@yandex.ru</p>
+            </div>
+
+
+            <div class="box-info">
+                <img class="box-info__img" src="img/House.svg" alt="">
+                <a href="#">
+                    <p class="box-info__text"><span class="space">Адрес:</span>г. Ростов-на-Дону ул. Максима Горького
+                        149/95</p>
+                </a>
+            </div>
+
+            <div class="box-whatsapp">
+                <img class="box-whatsapp__img" src="img/WhatsApp_white.svg" alt="">
+                <a href="#"><button class="box-whatsapp__btn">написать сообщение</button></a>
+            </div>
+
+            <div class="box-warning">
+                <p class="box-warning__text">
+                    Поликлиника М.Горького 149/95 не работает с 12 по 14 июня<br>
+                    Лаборатория (диагностика covid-19) ул. Варфоломеева 243а:<br>
+                    работает 12, 14 июня с 8:00 до 14:00<br>
+                    не рабочий день 13 июня (воскресенье)<br>
+                </p>
+                <img class="box-warning__img" src="img/PushPin.svg" alt="">
+            </div>
+
+            <div class="box-time">
+                <div class="box-time-row">
+                    <img class="box-time__img" src="img/Clock.svg" alt="">
+                    <p class="box-time__text">Режим работы:</p>
+                </div>
+                <p class="box-time__text">Понедельник — Пятница с 08:00 до 18:00 <br>
+                    Суббота с 09:00 до 13:00</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wraper">
+            <a class="wraper__link" href="index.html#services">посмотреть услуги</a>
+            <a><img src="img/CaretDown.svg" alt=""></a>
+        </div>
+
+        <article class="box center col">
+            <header class="headText">
+                <p>Написать отзыв</p>
+            </header>
+
+            <form action="/.netlify/functions/reviews" method="POST">
+                <input type="text" class="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" class="email" name="email" placeholder="Ваш Email" required>
+                <br><textarea type="text" class="reviews" name="text" placeholder="Место для текста Вашего отзыва"
+                    required></textarea><br>
+                <p class="robot"><input type="checkbox" value="Я не робот" required>Я не робот</p><br>
+                <button type="submit" class="butt_form"><b>Отправить отзыв</b></button>
+            </form>
+
+            <section class="box center col">
+                <p class="headText">Ваши отзывы</p>
+                <div class="box col reviews-list">
+                    <template id="review">
+                        <div class="box col border pad-10">
+                            <div class="box">
+                                <div>
+                                    <span class="name_rev" id="name">Владимир</span>
+                                    (<span class="mail_rew" id="email">vladimir@mail.ru</span>)
+                                </div>
+                                <div class="right gray" id="time">дата и время</div>
+                            </div>
+                            <div>
+                                <p class="text_rev" id="text">Счастья, здоровья и всего хорошего.</p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <div class="hide" id="reviews-loader">
+                    <div class="loader">
+                        <img src="/img/loader.svg" alt="">
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+    </main>
+
+    <footer>
+        ВОЗМОЖНЫ ПРОТИВОПОКАЗАНИЯ НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ <br>
+        ООО "Центр медицинских осмотров" © 2021 ОГРН 1136164003942<br>
+        Копирование и использование информации с сайта запрещено.<br>
+        Информация на сайте не является публичной офертой.<br>
+    </footer>
+</body>
+
+</html>
