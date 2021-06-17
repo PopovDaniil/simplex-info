@@ -356,3 +356,6 @@ td{
 .hide {
     display: none;
 }
+.left {
+    float: left;
+}
