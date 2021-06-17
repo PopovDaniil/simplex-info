@@ -350,4 +350,9 @@ td{
     text-align: end;
     margin-top: -40px;
 } 
-
+.loader {
+    height: 100px;
+}
+.hide {
+    display: none;
+}

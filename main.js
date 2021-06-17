@@ -16,7 +16,12 @@ const requestData = async (url, templateSelector = '') => {
 }
 
 document.addEventListener(
-    'DOMContentLoaded', () => requestData(
-        '/.netlify/functions/reviews', 'template#review'
-    )
+    'DOMContentLoaded', async () => {
+        const loader = document.querySelector('#reviews-loader')
+        loader.classList.remove('hide')
+        await requestData(
+            '/.netlify/functions/reviews', 'template#review'
+        )
+        loader.classList.add('hide')
+    }
 )
